@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N1 Rush - Lorran</title>
+</head>
+<body>
+    <div class="menu-principal">
+        <!--Menu hamburguer-->
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+
+        </div>
+
+        <header class="header">
+            <a id="logo" href=""><img class="logo" src="imagens/N1Rush.png" alt="" srcset=""></a>
+            <nav role="navigation" style="position: relative; left: 50px;top: 39px;">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="#"><li>Início</li></a>
+                    <a href="#"><li>Jogos</li></a>
+                    <a href="#"><li>Consoles</li></a>
+                    <a href="#"><li>Cartões</li></a>
+                    <a href="cadastrarumjogonovo.html"><li>Cadastrar um Jogo Novo</li></a>
+                  </ul>
+                </div>
+              </nav>
+              <div class="div-right">
+                    <div class="plane">
+                        <img src="imagens/paper-plane.png" alt="" srcset="">
+                        <p>Contato</p>
+                    </div>
+                    <div class="plane">
+                        <img src="imagens/Line 1.png" alt="" srcset="">
+                    </div>
+                    <div class="plane">
+                        <img src="imagens/search-solid.png" alt="" srcset="">
+                        <p>Buscar</p>
+                    </div>
+                    <div class="plane">
+                        <img src="imagens/Line 1.png" alt="" srcset="">
+                    </div>
+                    <div class="plane">
+                        <img src="imagens/shopping-bag-solid.png" alt="" srcset="">
+                        <span id="quantidadeItens"></span>
+                    </div>
+              </div>
+        </header>
+          
+    </div>
+    <!--Slider Show-->
+    <div class="slideshow-container">
+        <div class="slider fade">
+          <img src="imagens/reddeadredemptionII.jpg" style="width:100%">
+        </div>
+        
+        <div class="slider fade">
+          <img src="imagens/bannerMortalKombat.png" style="width:100%">
+          <img id="banner-mortal-kombat" src="imagens/Banner info.png" alt="" srcset="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+    <!--Banners-->
+    <header class="banner">
+        <div class="banner1">
+            <img src="imagens/Middle banner 01.png" alt="" srcset="">
+        </div>
+        <div class="banner2">
+            <img src="imagens/Middle banner 02.png" alt="" srcset="">
+        </div>
+    </header>
+      </div>
+    <!--Produtos em destaques-->
+    <div class="cards">
+        <h2>Produtos em destaque</h2>
+        <div class="card">
+            <img src="imagens/product-outriders.png" alt="" srcset="">
+            <div class="preco">
+                <span>Outsiders</span>
+                <p>R$ 200,00</p>
+                <a id="btn" type="button" onClick="comprar()"href="#modalLightBox">Comprar<img id="img" src="imagens/SuperMarioBross.png"/></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagens/product-cyberpunk2077.png" alt="" srcset="">
+            <div class="preco">
+                <span>Cyberpunk 2077</span>
+                <p>R$ 200,00</p>
+                <a id="btn" type="button" onClick="comprar()" href="#modalLightBox">Comprar<img id="img" src="imagens/SuperMarioBross.png"/></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagens/product-donkey-kong-country-tropical-freeze.png" alt="" srcset="">
+            <div class="preco">
+                <span>Donkey Kong Country Trocipal Freeze</span>
+                <p>R$ 200,00</p>
+                <a id="btn" type="button" onClick="comprar()" href="#modalLightBox">Comprar<img id="img" src="imagens/SuperMarioBross.png"/></a>
+            </div>
+        </div>
+    </div>
+    <div id="modalLightBox" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pedido realizado com sucesso!</h2>
+        <img src="imagens/SuperMarioBross.png" alt="" srcset="">
+      </div>
+    
+    </div>
+    <!--Categorias-->
+    <div class="box">
+        <h2>Dicas de Games</h2>
+        <select>
+          <option>Selecione uma Categoria</option>
+          <option>Jogos de Ação</option>
+          <option>Jogos de Luta</option>
+          <option>Jogos de Corrida</option>
+          <option>Jogos de Terror</option>
+          <option>Jogos RPG</option>
+        </select>
+      </div>
+      <div class="dicas-games">
+          <div class="img">
+              <img src="imagens/image 7.png" alt="" srcset="">
+          </div>
+          <div class="img">
+              <img src="imagens/image 8.png" alt="" srcset="">
+          </div>
+          <div class="img">
+              <img src="imagens/image 9.png" alt="" srcset="">
+          </div>
+          <div class="img">
+              <img src="imagens/image 10.png" alt="" srcset="">
+          </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <img src="imagens/logo_header 1.png" alt="" srcset="">
+        </div>
+        <div class="footer-right">
+          <span>Agência N1 - Todos os direitos reservados</span>
+        </div>
+      </footer>
+</body>
+    <script src="javascript/javascript.js"></script>
+    <!--<script src="javascript/lightbox.js"></script>-->
+</html>
